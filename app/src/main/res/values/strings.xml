@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">大新闻</string>
+    <string name="login_welcome">登录账户</string>
+    <string name="login_button_text">确定</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

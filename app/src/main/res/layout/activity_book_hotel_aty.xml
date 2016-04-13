@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="qmr.com.bignews.activity.BookHotelAty">
+
+    <TextView
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="预订房间"
+        android:textSize="24sp"/>
+
+    <CalendarView
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/calendarView" />
+    <ScrollView
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="end"
+                    android:id="@+id/tv_intime_bh"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="入住  |"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="  离店"/>
+                <TextView
+                    android:id="@+id/tv_outtime_bh"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ListView
+                android:layout_marginTop="8dp"
+                android:id="@+id/lv_hotel_type"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+            <EditText
+                android:hint="姓名"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_person_name_bh"/>
+            <EditText
+                android:hint="身份证号"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_person_id_bh"/>
+            <Button
+                android:text="提交"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_apply_book_hotel"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

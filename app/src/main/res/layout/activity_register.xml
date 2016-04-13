@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="qmr.com.bignews.activity.Register">
+    <EditText
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_register_username"
+        android:hint="用户名"/>
+
+    <EditText
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_register_password"
+        android:inputType="textPassword"
+        android:hint="密码"/>
+
+    <EditText
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_register_repassword"
+        android:inputType="textPassword"
+        android:hint="重复密码"/>
+
+    <EditText
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_register_phonenum"
+        android:inputType="phone"
+        android:hint="手机号码"/>
+
+    <EditText
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_register_idnum"
+        android:inputType="number"
+        android:hint="有效证件号码"/>
+
+    <Button
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册国机二院招待所会员"
+        android:id="@+id/btn_register_register" />
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:text="所有项目均必填"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/tv_register_hint"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="两次输入密码必须相同！"
+        android:textColor="#ff0000" />
+
+</LinearLayout>

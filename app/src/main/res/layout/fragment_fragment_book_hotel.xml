@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="qmr.com.bignews.fragment.FragmentBookHotel">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_book_mainFrag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+<!--        <fragment
+            android:id="@+id/cycleViewPager"
+            android:name="me.codeboy.android.cycleviewpager.CycleViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="立即预定"
+            android:id="@+id/btn_book_mainFrag" />
+    </LinearLayout>
+
+</LinearLayout>
